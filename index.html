@@ -1,1 +1,210 @@
+//index.html                                                                   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishi Garg | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="top">
+        <h1>SHIVA AWASTHI</h1>
+        <p>B.Tech CSE | 1st Year Student</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+    </header>
 
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm <strong>SHIVA AWASTHI</strong>, a first-year B.Tech CSE student passionate about web development and programming. I enjoy learning new technologies and building small creative projects using HTML and CSS.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <table>
+            <tr>
+                <th>Skill</th>
+                <th>Proficiency</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr>
+                <td>C Programming</td>
+                <td>Beginner</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Beginner</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>Personal Portfolio Website</li>
+            <li>(simple calorie tracker)</li>
+            <li>Simple Calculator using HTML & CSS</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Interested in connecting? Feel free to reach out!</p>
+        <P>9211758805</P>
+        <button>Email Me</button>
+    </section>
+
+    <a href="#top" class="back-to-top">↑</a>
+
+    <footer>
+        <p>KR manglam university|SHIVA</p>
+    </footer>
+</body>
+</html>
+
+
+//style.css                                                                            
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fb;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+header {
+    background-color: #2a6f97;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    margin: 5px 0 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #cce3f0;
+}
+
+
+section {
+    margin: 40px auto;
+    width: 80%;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #2a6f97;
+    border-bottom: 2px solid #468faf;
+    padding-bottom: 5px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    background-color: #2a6f97;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f0f6fa;
+}
+
+button {
+    background-color: #2a6f97;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #468faf;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #a3c7dc;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #468faf;
+}
+
+
+footer {
+    background-color: #2a6f97;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
